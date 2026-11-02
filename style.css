@@ -1,0 +1,131 @@
+  .site-header .container,
+  .navbar .container,
+  header .wrapper,
+  .site-header .wrapper,
+  .navbar .wrapper,
+  header nav,
+  .site-header nav,
+  .navbar nav {
+    min-height: 66px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-block: 10px;
+  }
+
+  .logo,
+  .brand,
+  .site-logo {
+    font-size: 1.35rem;
+  }
+
+  nav ul,
+  .nav-links,
+  .nav-menu {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 9px 17px;
+  }
+
+  nav a,
+  .nav-links a,
+  .nav-menu a {
+    font-size: 0.84rem;
+  }
+
+  .hero,
+  .hero-section,
+  #home.hero,
+  #hero {
+    padding-block: 58px;
+  }
+
+  .hero h1,
+  .hero-section h1,
+  #hero h1 {
+    font-size: clamp(2.35rem, 11vw, 3.5rem);
+  }
+
+  .section-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .car-grid,
+  .cars-grid,
+  .vehicle-grid,
+  .card-grid,
+  .race-grid,
+  .component-grid,
+  .system-grid,
+  .technical-grid,
+  .compare-layout,
+  .comparison-layout,
+  .vehicle-hero,
+  .car-detail-hero,
+  .profile-layout,
+  .account-layout,
+  .footer-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .spec-grid,
+  .specs-grid,
+  .specification-grid,
+  .stats-grid,
+  .statistics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .spec-item,
+  .spec-box {
+    padding: 13px;
+  }
+
+  .search-bar,
+  .search-box,
+  .search-panel {
+    align-items: stretch;
+  }
+
+  .search-bar button,
+  .search-box button,
+  .search-panel button {
+    flex-shrink: 0;
+  }
+
+  .auth-card,
+  .login-card,
+  .signup-card {
+    margin-block: 24px;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    white-space: nowrap;
+  }
+
+
+@media (max-width: 380px) {
+  .spec-grid,
+  .specs-grid,
+  .specification-grid,
+  .stats-grid,
+  .statistics-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-actions,
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn,
+  .hero-buttons .btn {
+    width: 100%;
+  }
+}
+    
